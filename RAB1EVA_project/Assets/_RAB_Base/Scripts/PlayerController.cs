@@ -9,21 +9,26 @@ public class PlayerController : MonoBehaviour
     public float jumpForce; //Define la fuerza de salto
     public bool useLinearVelocity = true; //Si es verdadero, usará el movimiento físico por motor de aceleración, si no, el de fuerza de empuje
     public bool groundCheck; //Bool que determina si el pj puede saltar o no (cuando está en el suelo puede)
-
-
+    public float maxSpeed; //Valor que mide la velocidad a la que se limita el movimiento como máximo.
+    
     [Header("Reference Variables")]
     public Rigidbody playerRb; //Almacén de referencia del rb, una vez relleno permite modificar sus variables internas
     public Vector2 moveInput; //Almacén de los valores de pulsación de movimiento (0, 1, -1)
     public AudioSource sfxSource; //Ref al altavoz del player, para reproducir sonidos
     public PlayerInteractor playerInteractor; //Ref al script, permite acceder a su lista de sonidos públicos
+   
 
     [Header("Alternative Values")]
-    public float sprintSpeed; // Velocidad extra al esprintar
-
+    public float sprintSpeed; // Variable que describe la Velocidad extra al esprintar
+    public float originalSpeed; //Variable que sirve para recordar la velocidad base.
+    
+    
+    
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        speed = originalSpeed;
     }
 
     // Update is called once per frame
@@ -37,6 +42,7 @@ public class PlayerController : MonoBehaviour
     {
         //FixedUpdate ejecuta todo lo que tenga que ver con el motor de físicas
         PhysicalMove();
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -56,6 +62,7 @@ public class PlayerController : MonoBehaviour
 
     void PhysicalMove()
     {
+
         if (useLinearVelocity == true)
         {
             //Tipo de movimiento por uso del motor de aceleración del rigidbody
@@ -69,8 +76,13 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector3.right * speed * moveInput.x);
             playerRb.AddForce(Vector3.forward * speed * moveInput.y);
         }
-    }
 
+        if (speed > maxSpeed) //Reestablecimiento de la velocidad máxima al pasarse
+        {
+            speed = maxSpeed;
+        }
+    }
+    
     void Jump()
     {
         groundCheck = false; //Al saltar, se quita la posibilidad de volver a saltar hasta tocar suelo
@@ -79,6 +91,12 @@ public class PlayerController : MonoBehaviour
         sfxSource.PlayOneShot(playerInteractor.sfxList[0]);
     }
 
+    void Sprint()
+    {
+        //Agregación de la velocidad de sprint a la de avance, sin tocar el eje y
+        speed += (sprintSpeed * Time.deltaTime * 0.01f);
+
+    }
     #region Input Methods
     //Declaramos los métodos de input (eventos de unity)
     //Siguen esta estructura: public void NombreAccion(referencia al contexto = botones de la acción)
@@ -86,6 +104,7 @@ public class PlayerController : MonoBehaviour
     {
         //Se rellena la variable de referencia con el valor de cualquier contexto
         moveInput = context.ReadValue<Vector2>();
+        
     }
 
     public void OnJump(InputAction.CallbackContext context)
@@ -102,6 +121,12 @@ public class PlayerController : MonoBehaviour
         }
         
     }
-
+    public void OnSprint(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Sprint();
+        }
+    }
     #endregion
 }
