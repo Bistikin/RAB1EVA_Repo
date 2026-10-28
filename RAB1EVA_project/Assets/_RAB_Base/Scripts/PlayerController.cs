@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour
     public AudioSource sfxSource; //Ref al altavoz del player, para reproducir sonidos
     public PlayerInteractor playerInteractor; //Ref al script, permite acceder a su lista de sonidos públicos
 
-
+    [Header("Alternative Values")]
+    public float sprintSpeed; // Velocidad extra al esprintar
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
