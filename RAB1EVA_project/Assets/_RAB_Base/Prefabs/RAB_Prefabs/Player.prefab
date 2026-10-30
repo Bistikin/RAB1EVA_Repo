@@ -201,6 +201,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: c526ecae-ddf3-478f-a904-c5294bedd9eb
     m_ActionName: 'Gameplay/Jump[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3032030455206832374}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnSprint
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e820ba88-8ef8-49a9-939e-088a37d0d0f1
+    m_ActionName: 'Gameplay/Sprint[/Keyboard/shift]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
@@ -221,11 +237,14 @@ MonoBehaviour:
   speed: 10
   jumpForce: 8
   useLinearVelocity: 1
-  groundCheck: 0
+  maxSpeed: 100
   playerRb: {fileID: 3409069474521666296}
   moveInput: {x: 0, y: 0}
   sfxSource: {fileID: 8591341639417929703}
   playerInteractor: {fileID: 2955268093276677981}
+  sprintSpeed: 20
+  originalSpeed: 10
+  isSprinting: 0
 --- !u!114 &2955268093276677981
 MonoBehaviour:
   m_ObjectHideFlags: 0

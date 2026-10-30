@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEditor.Build;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -25,13 +26,17 @@ public class PlayerController : MonoBehaviour
 
     [Header("Checks")]
     private bool groundCheck; //Bool que determina si el pj puede saltar o no (cuando está en el suelo puede)
-    private bool isSprinting; //Bool que determina el estado de sprint.
+    public bool isSprinting; //Bool que determina el estado de sprint.
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         originalSpeed = speed;
+        isSprinting = false;
+        groundCheck = false;
+
+        Debug.Log("debuglogfunciona");
     }
 
     // Update is called once per frame
@@ -39,14 +44,14 @@ public class PlayerController : MonoBehaviour
     {
         //Ejecuta todo lo que depende del procesador y ejecuta el input
         //CinematicMove();
-        Debug.Log("hola");
+     
     }
 
     private void FixedUpdate()
     {
         //FixedUpdate ejecuta todo lo que tenga que ver con el motor de físicas
         PhysicalMove();
-
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -85,20 +90,8 @@ public class PlayerController : MonoBehaviour
         {
             speed = maxSpeed;
         }
+       
     }
-
-    public void Sprint()
-    {
-        if (isSprinting == true)//si se ha presionado y todavia no se ha soltado, la velocidad sera de esprint
-        {
-            speed = sprintSpeed;
-        }
-        else //si se ha soltado, la velocidad sera la que hay por defecto
-        {
-            speed = originalSpeed;
-        }
-    }
-
     void Jump()
     {
         groundCheck = false; //Al saltar, se quita la posibilidad de volver a saltar hasta tocar suelo
@@ -107,7 +100,18 @@ public class PlayerController : MonoBehaviour
         sfxSource.PlayOneShot(playerInteractor.sfxList[0]);
     }
 
-    
+    void Sprint()
+    {
+        if (isSprinting == true)
+        {
+            speed = sprintSpeed;
+            
+        }
+        if (isSprinting == false)
+        {
+            speed = originalSpeed;
+        }
+    }
 
 
     #region Input Methods
@@ -134,20 +138,23 @@ public class PlayerController : MonoBehaviour
         }
         
     }
-   
+
     public void OnSprint(InputAction.CallbackContext context)
     {
+       
+
         if (context.performed)
         {
             isSprinting = true;
-            Debug.Log("se está esprintando");
         }
-        else if (context.canceled)
+        if (context.canceled)
         {
             isSprinting = false;
-            Debug.Log("no se está esprintando");
+            
         }
-        Sprint(); //al mantener Shift, lt o rt, se esprinta hasta su soltura. 
+
+        Sprint();
+
     }
 
 
