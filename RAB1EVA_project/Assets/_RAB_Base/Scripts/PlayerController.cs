@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement Parameters")]
     public float speed; //Variable que define la velocidad del player
     public float jumpForce; //Define la fuerza de salto
-    public bool useLinearVelocity = true; //Si es verdadero, usará el movimiento físico por motor de aceleración, si no, el de fuerza de empuje
+    public bool useLinearVelocity ; //Si es verdadero, usará el movimiento físico por motor de aceleración, si no, el de fuerza de empuje
     
     public float maxSpeed; //Valor que mide la velocidad a la que se limita el movimiento como máximo.
     
@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     [Header("Alternative Values")]
     public float sprintSpeed; // Variable que describe la Velocidad extra al esprintar
     public float originalSpeed; //Variable que sirve para recordar la velocidad base.
+    public float dashSpeed; //Velocidad de la mecánica del "Dash"
 
     [Header("Checks")]
     private bool groundCheck; //Bool que determina si el pj puede saltar o no (cuando está en el suelo puede)
@@ -113,6 +114,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+   
 
     #region Input Methods
     //Declaramos los métodos de input (eventos de unity)
@@ -156,6 +158,8 @@ public class PlayerController : MonoBehaviour
         Sprint();
 
     }
+
+    
 
 
     #endregion
