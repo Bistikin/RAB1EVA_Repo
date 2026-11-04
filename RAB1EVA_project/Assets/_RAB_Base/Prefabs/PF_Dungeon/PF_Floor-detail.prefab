@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1903404926056342848}
   - component: {fileID: 7781107787732762555}
   - component: {fileID: 5112026495691446200}
-  - component: {fileID: 6126934300946589876}
+  - component: {fileID: 8847725841752706108}
   m_Layer: 0
   m_Name: PF_Floor-detail
   m_TagString: Ground
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 8300482489928132987}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.01, y: 0, z: -2.7}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -91,8 +91,8 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6126934300946589876
-BoxCollider:
+--- !u!64 &8847725841752706108
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109,6 +109,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 0.0075832354, z: 1}
-  m_Center: {x: 0, y: 0.0037916177, z: 0}
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1356312649159459081, guid: 804c6aa33083dd74db677a8274072c94, type: 3}
