@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour
         if (isSprinting == true)
         {
             speed = sprintSpeed;
-            
+
         }
         if (isSprinting == false)
         {
@@ -114,7 +114,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-   
+    void Dash()
+    {
+        playerRb.AddForce(moveInput.x, playerRb.linearVelocity.y, moveInput.y * dashSpeed, ForceMode.VelocityChange);
+        
+    }
+
 
     #region Input Methods
     //Declaramos los métodos de input (eventos de unity)
@@ -175,7 +180,10 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-
+    public static float Lerp(float initialValue, float finalValue, float interpolationFactor)
+    {
+        return initialValue + (finalValue - initialValue) * interpolationFactor;
+    }
 
 
 }
