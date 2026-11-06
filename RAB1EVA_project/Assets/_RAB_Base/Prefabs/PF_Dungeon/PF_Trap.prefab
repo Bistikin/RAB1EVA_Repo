@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8180868086508636336}
   m_Layer: 0
   m_Name: PF_Trap
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 1457995313546699139}
   m_Layer: 0
   m_Name: spikes
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
