@@ -4,16 +4,24 @@ using UnityEditor.Build;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
+
+
 
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Parameters")]
     public float speed; //Variable que define la velocidad del player
     public float jumpForce; //Define la fuerza de salto
-    public bool useLinearVelocity ; //Si es verdadero, usará el movimiento físico por motor de aceleración, si no, el de fuerza de empuje
+    public bool useLinearVelocity; //Si es verdadero, usará el movimiento físico por motor de aceleración, si no, el de fuerza de empuje
+
     
-    public float maxSpeed; //Valor que mide la velocidad a la que se limita el movimiento como máximo.
-    
+
+
+
+    public float maxWalkSpeed; //Valor que mide la velocidad a la que se limita el movimiento al caminar.
+    public float maxSpeed;  //Valor que mide la velocidad a la que se limita el movimiento de forma absoluta.
+
     [Header("Reference Variables")]
     public Rigidbody playerRb; //Almacén de referencia del rb, una vez relleno permite modificar sus variables internas
     public Vector2 moveInput; //Almacén de los valores de pulsación de movimiento (0, 1, -1)
@@ -22,18 +30,44 @@ public class PlayerController : MonoBehaviour
 
     [Header("Alternative Values")]
     public float sprintSpeed; // Variable que describe la Velocidad extra al esprintar
-    public float originalSpeed; //Variable que sirve para recordar la velocidad base.
+    public float walkSpeed; //Variable que sirve para recordar la velocidad base.
     public float dashSpeed; //Velocidad de la mecánica del "Dash"
 
     [Header("Checks")]
     private bool groundCheck; //Bool que determina si el pj puede saltar o no (cuando está en el suelo puede)
     public bool isSprinting; //Bool que determina el estado de sprint.
 
+    
+   
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    #region func definition
+
+    
+
+    public static float Lerp(float initialSpeed, float finalSpeed, float interpolationFactor)
+    {
+        
+
+        return initialSpeed + (finalSpeed - initialSpeed) * interpolationFactor;
+        
+
+    }
+
+
+
+
+
+
+
+    #endregion
+
+
+
+
+
     void Start()
     {
-        originalSpeed = speed;
+        walkSpeed = speed;
         isSprinting = false;
         groundCheck = false;
 
@@ -52,7 +86,21 @@ public class PlayerController : MonoBehaviour
     {
         //FixedUpdate ejecuta todo lo que tenga que ver con el motor de físicas
         PhysicalMove();
-        
+
+
+
+
+        Vector3 horizontalVelocity = playerRb.linearVelocity;
+        horizontalVelocity = new Vector3(playerRb.linearVelocity.x, 0, playerRb.linearVelocity.z);
+
+        // The speed on the x-z plane ignoring any speed
+        float horizontalSpeed = horizontalVelocity.magnitude;
+        // The speed from gravity or jumping
+        float verticalSpeed = playerRb.linearVelocity.y;
+        // The overall speed
+        float overallSpeed = playerRb.linearVelocity.magnitude;
+
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -73,25 +121,24 @@ public class PlayerController : MonoBehaviour
     void PhysicalMove()
     {
 
-        if (useLinearVelocity == true)
+        if (useLinearVelocity == false)
         {
-            //Tipo de movimiento por uso del motor de aceleración del rigidbody
-            //A cada eje del rigidbody se le multiplica la velocidad * input por separado
-            playerRb.linearVelocity = new Vector3(speed * moveInput.x, playerRb.linearVelocity.y, speed * moveInput.y);
+
+            playerRb.AddForce(Vector3.forward * moveInput.y * speed, ForceMode.Force);
+            playerRb.AddForce(Vector3.right * moveInput.x * speed, ForceMode.Force);
+
+
+            /*playerRb.AddForce(Vector3.right * speed * moveInput.x,ForceMode.VelocityChange);
+            playerRb.AddForce(Vector3.forward * speed * moveInput.y,ForceMode.VelocityChange);*/
+
         }
         else
         {
-            //Tipo de movimiento por fuerza de empuje en cada eje del rigidbody
-            //A cada eje se le aplica un AddForce en la dirección concreta
-            playerRb.AddForce(Vector3.right * speed * moveInput.x);
-            playerRb.AddForce(Vector3.forward * speed * moveInput.y);
-        }
 
-        if (speed > maxSpeed) //Reestablecimiento de la velocidad máxima al pasarse
-        {
-            speed = maxSpeed;
+            playerRb.linearVelocity = new Vector3(moveInput.x * speed, playerRb.linearVelocity.y, moveInput.y * speed);
+
         }
-       
+    
     }
     void Jump()
     {
@@ -103,14 +150,34 @@ public class PlayerController : MonoBehaviour
 
     void Sprint()
     {
-        if (isSprinting == true)
+        if (isSprinting == true )
         {
+            /* if(playerRb.linearVelocity.magnitude >= maxSpeed)
+             {
+                 Vector3 direction = playerRb.linearVelocity.normalized;
+                 playerRb.linearVelocity = direction * maxSpeed;
+             }*/
+            /* Mathf.Clamp(playerRb.linearVelocity.magnitude, 0, maxSpeed);*/
+
             speed = sprintSpeed;
 
+            if (speed>= maxSpeed)
+            {
+                speed = maxSpeed;
+            }
         }
         if (isSprinting == false)
         {
-            speed = originalSpeed;
+            /* Vector3 direction = playerRb.linearVelocity.normalized;
+             playerRb.linearVelocity = direction * maxWalkSpeed;*/
+            /*Mathf.Clamp(playerRb.linearVelocity.magnitude, 0, maxWalkSpeed);*/
+
+            speed = walkSpeed;
+
+            if (speed >= maxWalkSpeed)
+            {
+                speed = maxWalkSpeed;
+            }
         }
     }
 
@@ -164,14 +231,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    
+
 
 
     #endregion
 
     #region InputActionSystem
 
-    
+
 
 
 
@@ -180,10 +247,8 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
-    public static float Lerp(float initialValue, float finalValue, float interpolationFactor)
-    {
-        return initialValue + (finalValue - initialValue) * interpolationFactor;
-    }
+
+  
 
 
 }
