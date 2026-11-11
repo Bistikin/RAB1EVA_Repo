@@ -11,16 +11,22 @@ using UnityEngine.Rendering;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Parameters")]
-    public float speed; //Variable que define la velocidad del player
+    public float currentSpeed; //Variable que define la velocidad del player
     public float jumpForce; //Define la fuerza de salto
     public bool useLinearVelocity; //Si es verdadero, usará el movimiento físico por motor de aceleración, si no, el de fuerza de empuje
+    Vector3 movement; //lVel del playerRb normalizado
+    Vector3 horizontalVelocity; //velocidad vectorial en eje "x" y eje "y"
 
-    
-
-
+    public float horizontalSpeed; //magnitud velocidad en eje "x" junto a eje "z"
+    public float verticalSpeed; // magnitud velocidad en eje "y"
+    public float overallSpeed; //magnitud velocidad total
+    public Vector3 direction; //dirección de movimiento
+    public float rawDX; //magnitud de velocidad x
+    public float rawDZ; //magnitud de velocidad z
 
     public float maxWalkSpeed; //Valor que mide la velocidad a la que se limita el movimiento al caminar.
-    public float maxSpeed;  //Valor que mide la velocidad a la que se limita el movimiento de forma absoluta.
+    public float maxSprintSpeed;
+    public float currentMaxSpeed;  //Valor que mide la velocidad a la que se limita el movimiento de forma absoluta.
 
     [Header("Reference Variables")]
     public Rigidbody playerRb; //Almacén de referencia del rb, una vez relleno permite modificar sus variables internas
@@ -67,7 +73,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        walkSpeed = speed;
+        walkSpeed = currentSpeed;
         isSprinting = false;
         groundCheck = false;
 
@@ -79,7 +85,8 @@ public class PlayerController : MonoBehaviour
     {
         //Ejecuta todo lo que depende del procesador y ejecuta el input
         //CinematicMove();
-     
+        SpeedCheck();
+        //SpeedCheck2();
     }
 
     private void FixedUpdate()
@@ -88,19 +95,24 @@ public class PlayerController : MonoBehaviour
         PhysicalMove();
 
 
+        
 
-
-        Vector3 horizontalVelocity = playerRb.linearVelocity;
         horizontalVelocity = new Vector3(playerRb.linearVelocity.x, 0, playerRb.linearVelocity.z);
 
         // The speed on the x-z plane ignoring any speed
-        float horizontalSpeed = horizontalVelocity.magnitude;
+        horizontalSpeed = horizontalVelocity.magnitude;
         // The speed from gravity or jumping
-        float verticalSpeed = playerRb.linearVelocity.y;
+        verticalSpeed = playerRb.linearVelocity.y;
         // The overall speed
-        float overallSpeed = playerRb.linearVelocity.magnitude;
+        overallSpeed = playerRb.linearVelocity.magnitude;
+
+        direction = horizontalVelocity.normalized;
 
 
+
+
+        rawDX = playerRb.linearVelocity.x;
+        rawDZ = playerRb.linearVelocity.z;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -114,8 +126,8 @@ public class PlayerController : MonoBehaviour
     void CinematicMove()
     {
         //Se usa transform.Translate para moverse (dirección * velocidad)
-        transform.Translate(Vector3.forward * speed * moveInput.y * Time.deltaTime);
-        transform.Translate(Vector3.right * speed * moveInput.x * Time.deltaTime);
+        transform.Translate(Vector3.forward * currentSpeed * moveInput.y * Time.deltaTime);
+        transform.Translate(Vector3.right * currentSpeed * moveInput.x * Time.deltaTime);
     }
 
     void PhysicalMove()
@@ -123,61 +135,89 @@ public class PlayerController : MonoBehaviour
 
         if (useLinearVelocity == false)
         {
+            /*movement = new Vector3(moveInput.x, 0f, moveInput.y);
+            movement.Normalize();
+            playerRb.AddForce(movement * currentSpeed,ForceMode.VelocityChange);*/
 
+
+
+
+            /*
             playerRb.AddForce(Vector3.forward * moveInput.y * speed, ForceMode.Force);
-            playerRb.AddForce(Vector3.right * moveInput.x * speed, ForceMode.Force);
+            playerRb.AddForce(Vector3.right * moveInput.x * speed, ForceMode.Force);*/
 
 
-            /*playerRb.AddForce(Vector3.right * speed * moveInput.x,ForceMode.VelocityChange);
-            playerRb.AddForce(Vector3.forward * speed * moveInput.y,ForceMode.VelocityChange);*/
+            playerRb.AddForce(Vector3.right * currentSpeed/2 * moveInput.x,ForceMode.VelocityChange);
+            playerRb.AddForce(Vector3.forward * currentSpeed/2 * moveInput.y,ForceMode.VelocityChange);
 
+
+            
         }
         else
         {
 
-            playerRb.linearVelocity = new Vector3(moveInput.x * speed, playerRb.linearVelocity.y, moveInput.y * speed);
+            playerRb.linearVelocity = new Vector3(moveInput.x * currentSpeed, playerRb.linearVelocity.y, moveInput.y * currentSpeed);
 
         }
-    
+
     }
-    void Jump()
+    void SpeedCheck()
     {
-        groundCheck = false; //Al saltar, se quita la posibilidad de volver a saltar hasta tocar suelo
-        playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        //Reproducir sonido de salto: accede al player interactor y busca el sonido exacto en la lista
-        sfxSource.PlayOneShot(playerInteractor.sfxList[0]);
+        if (isSprinting == true && horizontalSpeed > currentMaxSpeed)
+        {
+            horizontalSpeed = currentMaxSpeed;
+
+            //horizontalVelocity = new Vector3(direction.x * maxWalkSpeed,0,direction.z *maxWalkSpeed);
+        }
+        else if (isSprinting == false && horizontalSpeed > maxWalkSpeed)
+        {
+            horizontalSpeed = maxWalkSpeed;
+            //horizontalVelocity = new Vector3(direction.x * maxWalkSpeed,0,direction.z *maxWalkSpeed);
+        }
+
     }
+    void SpeedCheck2()
+    {
+        if (isSprinting == true && horizontalSpeed > currentMaxSpeed)
+        {
+            Mathf.Clamp(horizontalSpeed, 0f, currentMaxSpeed);
+        }else if (isSprinting == false && horizontalSpeed > maxWalkSpeed)
+        {
+            Mathf.Clamp(horizontalSpeed, 0f, maxWalkSpeed);
+        }
+        }
+    void Jump()
+        {
+            groundCheck = false; //Al saltar, se quita la posibilidad de volver a saltar hasta tocar suelo
+            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            //Reproducir sonido de salto: accede al player interactor y busca el sonido exacto en la lista
+            sfxSource.PlayOneShot(playerInteractor.sfxList[0]);
+        }
 
     void Sprint()
     {
         if (isSprinting == true )
         {
-            /* if(playerRb.linearVelocity.magnitude >= maxSpeed)
-             {
-                 Vector3 direction = playerRb.linearVelocity.normalized;
-                 playerRb.linearVelocity = direction * maxSpeed;
-             }*/
+             
             /* Mathf.Clamp(playerRb.linearVelocity.magnitude, 0, maxSpeed);*/
 
-            speed = sprintSpeed;
+            currentSpeed = sprintSpeed;
 
-            if (speed>= maxSpeed)
+            /*if (speed>= maxSpeed)
             {
                 speed = maxSpeed;
-            }
+            }*/
         }
         if (isSprinting == false)
         {
-            /* Vector3 direction = playerRb.linearVelocity.normalized;
-             playerRb.linearVelocity = direction * maxWalkSpeed;*/
-            /*Mathf.Clamp(playerRb.linearVelocity.magnitude, 0, maxWalkSpeed);*/
 
-            speed = walkSpeed;
 
-            if (speed >= maxWalkSpeed)
+            currentSpeed = walkSpeed;
+
+          /*  if (speed >= maxWalkSpeed)
             {
                 speed = maxWalkSpeed;
-            }
+            }*/
         }
     }
 
