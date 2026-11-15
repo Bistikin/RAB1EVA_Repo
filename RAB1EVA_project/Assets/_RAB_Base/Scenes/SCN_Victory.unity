@@ -290,10 +290,10 @@ RectTransform:
   - {fileID: 908728203}
   m_Father: {fileID: 1291149586}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.39552054, y: 0.3145185}
-  m_AnchorMax: {x: 0.6025206, y: 0.38962966}
-  m_AnchoredPosition: {x: 2, y: 0.98898315}
-  m_SizeDelta: {x: -1.2019958, y: -6.5999985}
+  m_AnchorMin: {x: 0.3754794, y: 0.3145185}
+  m_AnchorMax: {x: 0.58447945, y: 0.38700002}
+  m_AnchoredPosition: {x: -1, y: 1.5000153}
+  m_SizeDelta: {x: -5.201996, y: -3.5999985}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &319449424
 MonoBehaviour:
@@ -417,7 +417,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 1feb6c75da1af4442b7772a0b66f5d75, type: 3}
+  m_Resource: {fileID: 8300000, guid: 171e3edc781c16a41b2bf7108693a733, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1014,14 +1014,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+  m_Color: {r: 0.5188679, g: 0.5188679, b: 0.5188679, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 59c0df16680265744a66c0213de969a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d441e08b28f11334c96757352df450e6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1071,10 +1071,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1291149586}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.1314923, y: 0.4352963}
-  m_AnchorMax: {x: 0.86341035, y: 0.8048519}
-  m_AnchoredPosition: {x: 5.000061, y: -1.6309509}
-  m_SizeDelta: {x: -1.9360008, y: -3.262}
+  m_AnchorMin: {x: 0.1557267, y: 0.43159258}
+  m_AnchorMax: {x: 0.82000005, y: 0.81500006}
+  m_AnchoredPosition: {x: -14.560974, y: -5.130951}
+  m_SizeDelta: {x: -112.453094, y: -18.262001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1366275668
 MonoBehaviour:
@@ -1098,7 +1098,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'congratulations!
 
-    you rolled the ball!'
+    you found the ONE piece!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1c5742a8a20910f41aff535008985886, type: 2}
   m_sharedMaterial: {fileID: 496052890602540340, guid: 1c5742a8a20910f41aff535008985886, type: 2}
@@ -1107,8 +1107,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291458412
-  m_fontColor: {r: 0.42239228, g: 0.4586475, b: 0.7924528, a: 1}
+    rgba: 4287037428
+  m_fontColor: {r: 0.9574712, g: 1, b: 0.5235849, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1212,10 +1212,10 @@ RectTransform:
   - {fileID: 42159353}
   m_Father: {fileID: 1291149586}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.39552054, y: 0.22100002}
-  m_AnchorMax: {x: 0.6025206, y: 0.28800002}
-  m_AnchoredPosition: {x: -0.39901733, y: 0.90478516}
-  m_SizeDelta: {x: 0.79800415, y: -0.6000061}
+  m_AnchorMin: {x: 0.3754794, y: 0.22100002}
+  m_AnchorMax: {x: 0.58447945, y: 0.29000002}
+  m_AnchoredPosition: {x: 0, y: -0.7000122}
+  m_SizeDelta: {x: -3.2019958, y: -2.600006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1433275758
 MonoBehaviour:
