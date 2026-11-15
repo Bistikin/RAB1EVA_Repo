@@ -7,15 +7,17 @@ public class PlayerInteractor : MonoBehaviour
     [Header("Respawn Configuration")]
     public Transform respawnPoint; //Ref al punto de respawn para usar su posición
     public float respawnFallLimit = -10; //Valor negativo en eje Y a partir del cual se respawnea
+  
 
     [Header("Point System")]
     public int points; //Cantidad de puntos actuales del player
     public int winPoints = 5; //Cantidad de puntos necesarios para ganar
     public int sceneToLoad = 2; //Número de escena a cargar cuando se consigue la victoria
-
+    
     [Header("Reference Variables")]
     public Rigidbody playerRb; //Ref al rigidbody para resetear su motor de aceleración al respawnear
-
+   
+    public GameObject PlayerCam;
     [Header("SFX Configuration")]
     public AudioClip[] sfxList; //Array de sonidos: diferentes sonidos agrupados para diferentes acciones
     public AudioSource sfxSource; //Ref al altavoz del player: referenciarlo permite reproducir sonidos cuando queramos
@@ -61,13 +63,19 @@ public class PlayerInteractor : MonoBehaviour
         {
             points += 1; //Suma un punto al total de puntos actuales
             sfxSource.PlayOneShot(sfxList[2]); //Reproducir el sonido de pick up
-            other.gameObject.SetActive(false); //Apagar el objeto con el que chocas
+            other.gameObject.SetActive(false);
         }
         if (other.gameObject.CompareTag("Switch"))
         {
+            other.gameObject.SetActive(false); //Apagar el objeto con el que chocas
             sfxSource.PlayOneShot(sfxList[3]); //Reproducir el sonido asociado al switch
+        }if (other.gameObject.CompareTag("CameraSwitch"))
+        {
+            
+            sfxSource.PlayOneShot(sfxList[3]);
+            PlayerCam.transform.Rotate(0, 180, 0);
         }
-        
+
     }
 
     void Respawn()
