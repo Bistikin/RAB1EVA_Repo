@@ -73,7 +73,7 @@ public class PlayerInteractor : MonoBehaviour
         {
             
             sfxSource.PlayOneShot(sfxList[3]);
-            PlayerCam.transform.Rotate(0, 180, 0);
+            PlayerCam.transform.Rotate(60, 180, 0);
         }
 
     }
