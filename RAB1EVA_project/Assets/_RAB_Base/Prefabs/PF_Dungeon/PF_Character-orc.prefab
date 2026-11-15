@@ -79,6 +79,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a41c683991582f84aaf70fcb413bc808, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6772779086692827468}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a41c683991582f84aaf70fcb413bc808, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 454430671844354464}
   m_SourcePrefab: {fileID: 100100000, guid: a41c683991582f84aaf70fcb413bc808, type: 3}
 --- !u!1 &3559008424973578479 stripped
 GameObject:
@@ -106,3 +109,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.56374913, y: 0.71626496, z: 0.31414625}
   m_Center: {x: 0.005638122, y: 0.30815226, z: 0.016356818}
+--- !u!114 &454430671844354464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3559008424973578479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9025b9ae7a7e1946bde8818219b38a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SaltoSuave
+  altura: 1.5
+  velocidad: 3
