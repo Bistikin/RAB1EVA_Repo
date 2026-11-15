@@ -8,6 +8,8 @@ TagManager:
   - Obstacle
   - PickUp
   - KeyMaster
+  - Switch
+  - CameraSwitch
   layers:
   - Default
   - TransparentFX
