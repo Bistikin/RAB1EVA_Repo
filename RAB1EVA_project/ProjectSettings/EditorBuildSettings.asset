@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/_RAB_Base/Scenes/SCN_LVL01.unity
     guid: 33ff4857484128847be56e8089b5ac9d
   - enabled: 1
+    path: "Assets/_RAB_Base/Scenes/SCN_LVL02_Andr\xE9s.unity"
+    guid: c9a9b2bde9fccc74699aae839ceeac14
+  - enabled: 1
+    path: Assets/_RAB_Base/Scenes/SCN_LVL03.unity
+    guid: e10089e73fbf16e4696f9e2102fb7054
+  - enabled: 1
     path: Assets/_RAB_Base/Scenes/SCN_Victory.unity
     guid: 472ad88d48e2443409a8d31ab26997a4
   m_configObjects:
