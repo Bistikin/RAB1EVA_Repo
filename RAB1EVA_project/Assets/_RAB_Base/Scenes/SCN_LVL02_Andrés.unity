@@ -2809,6 +2809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.494335
@@ -3074,6 +3078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Platform_Overhang
       objectReference: {fileID: 0}
+    - target: {fileID: 817986201303575605, guid: ffd797ba392d3604cab1aa1e138c3324, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3090,6 +3098,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3732,6 +3744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.328415
@@ -3958,6 +3974,10 @@ PrefabInstance:
     - target: {fileID: 8225627669753397271, guid: 2622f95327d1e254cbe2976b197e228c, type: 3}
       propertyPath: m_Name
       value: PF_Crate
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225627669753397271, guid: 2622f95327d1e254cbe2976b197e228c, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8749540130810157741, guid: 2622f95327d1e254cbe2976b197e228c, type: 3}
       propertyPath: m_LocalScale.x
@@ -4500,6 +4520,10 @@ PrefabInstance:
     - target: {fileID: 6751637067504527686, guid: a6750ca3e86994b48aaa833f0738c315, type: 3}
       propertyPath: m_Name
       value: PF_Flowers (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751637067504527686, guid: a6750ca3e86994b48aaa833f0738c315, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5442,6 +5466,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6704,6 +6732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Rocks (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7727,6 +7759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Block_Moving_Large (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -7953,6 +7989,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8764,7 +8804,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 954960086809638442, guid: 81b33c30f4035ec40916ed7029bb9d7b, type: 3}
       propertyPath: m_TagString
-      value: Obstacle
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1603368687834322943, guid: 81b33c30f4035ec40916ed7029bb9d7b, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -8945,6 +8985,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10121,6 +10165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5501716
@@ -10833,6 +10881,10 @@ PrefabInstance:
     - target: {fileID: 817986201303575605, guid: ffd797ba392d3604cab1aa1e138c3324, type: 3}
       propertyPath: m_Name
       value: PF_Platform_Overhang (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 817986201303575605, guid: ffd797ba392d3604cab1aa1e138c3324, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11590,6 +11642,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12521,6 +12577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Fence_Low_Straight (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4106363922838705365, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.202456
@@ -12695,6 +12755,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12971,6 +13035,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14421,6 +14489,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17262,6 +17334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.932102
@@ -17318,6 +17394,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalScale.x
@@ -17515,6 +17595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Block_Moving (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7494929282327640483, guid: 03ee68850b1c0524a9d89271eeca47ca, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17531,6 +17615,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18642,6 +18730,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20574,6 +20666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Platform_Overhang (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 817986201303575605, guid: ffd797ba392d3604cab1aa1e138c3324, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22240,6 +22336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Fence_Low_Straight (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4106363922838705365, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.802456
@@ -23187,6 +23287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Fence_Low_Straight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4106363922838705365, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.202456
@@ -23685,6 +23789,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.85017157
@@ -23998,6 +24106,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalScale.x
@@ -25772,6 +25884,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.019882
@@ -26130,6 +26246,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28535,6 +28655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.85017157
@@ -28595,6 +28719,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30183,6 +30311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Rocks (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30270,6 +30402,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32337,6 +32473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Crate (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8225627669753397271, guid: 2622f95327d1e254cbe2976b197e228c, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 8749540130810157741, guid: 2622f95327d1e254cbe2976b197e228c, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -32948,6 +33088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Block_Moving (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7494929282327640483, guid: 03ee68850b1c0524a9d89271eeca47ca, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33268,6 +33412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5943336
@@ -33580,6 +33728,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalScale.x
@@ -34060,6 +34212,10 @@ PrefabInstance:
     - target: {fileID: 817986201303575605, guid: ffd797ba392d3604cab1aa1e138c3324, type: 3}
       propertyPath: m_Name
       value: PF_Platform_Overhang (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 817986201303575605, guid: ffd797ba392d3604cab1aa1e138c3324, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -40574,6 +40730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Block_Moving_Large (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -41430,6 +41590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Rocks (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -41801,6 +41965,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Block_Moving_Large (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -41878,6 +42046,10 @@ PrefabInstance:
     - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_Name
       value: PF_Fence_Low_Straight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4106363922838705365, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42948,6 +43120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -71.7666
@@ -43567,6 +43743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Rocks (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43758,6 +43938,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalScale.x
@@ -45196,6 +45380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Flowers_Tall
       objectReference: {fileID: 0}
+    - target: {fileID: 6515426132396007461, guid: f6613048022f04e40b66374851df35f9, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45352,6 +45540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5501716
@@ -45422,6 +45614,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45821,6 +46017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Flowers
       objectReference: {fileID: 0}
+    - target: {fileID: 6751637067504527686, guid: a6750ca3e86994b48aaa833f0738c315, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -46209,6 +46409,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46600,6 +46804,10 @@ PrefabInstance:
     - target: {fileID: 7494929282327640483, guid: 03ee68850b1c0524a9d89271eeca47ca, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494929282327640483, guid: 03ee68850b1c0524a9d89271eeca47ca, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48360,6 +48568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Flowers_Tall (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6515426132396007461, guid: f6613048022f04e40b66374851df35f9, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -48781,6 +48993,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49518,6 +49734,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Fence_Low_Straight (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4106363922838705365, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.802456
@@ -49574,6 +49794,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50874,6 +51098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5501716
@@ -51073,6 +51301,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51799,6 +52031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Fence_Low_Straight (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4106363922838705365, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.802456
@@ -52323,6 +52559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Block_Moving_Large (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.6017
@@ -52630,6 +52870,10 @@ PrefabInstance:
     - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
       propertyPath: m_Name
       value: PF_Rocks (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53812,6 +54056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Flowers_Tall (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6515426132396007461, guid: f6613048022f04e40b66374851df35f9, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -54217,6 +54465,10 @@ PrefabInstance:
     - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_Name
       value: PF_Fence_Low_Straight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4106363922838705365, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55800,6 +56052,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.9056625
@@ -57061,6 +57317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Block_Moving
       objectReference: {fileID: 0}
+    - target: {fileID: 7494929282327640483, guid: 03ee68850b1c0524a9d89271eeca47ca, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -57319,6 +57579,10 @@ PrefabInstance:
     - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_Name
       value: PF_Fence_Low_Straight (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4106363922838705365, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57669,6 +57933,10 @@ PrefabInstance:
     - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
       propertyPath: m_Name
       value: PF_Rocks (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58469,6 +58737,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59993,6 +60265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.164085
@@ -60616,6 +60892,10 @@ PrefabInstance:
     - target: {fileID: 6751637067504527686, guid: a6750ca3e86994b48aaa833f0738c315, type: 3}
       propertyPath: m_Name
       value: PF_Flowers (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751637067504527686, guid: a6750ca3e86994b48aaa833f0738c315, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -63169,6 +63449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.698944
@@ -63447,6 +63731,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Rocks (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63463,6 +63751,10 @@ PrefabInstance:
     - target: {fileID: 8225627669753397271, guid: 2622f95327d1e254cbe2976b197e228c, type: 3}
       propertyPath: m_Name
       value: PF_Crate (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225627669753397271, guid: 2622f95327d1e254cbe2976b197e228c, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8749540130810157741, guid: 2622f95327d1e254cbe2976b197e228c, type: 3}
       propertyPath: m_LocalScale.x
@@ -65120,6 +65412,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Fence_Low_Straight (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4106363922838705365, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.802454
@@ -66178,6 +66474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5501716
@@ -67015,6 +67315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Block_Moving_Large (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -67089,6 +67393,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalScale.x
@@ -67347,6 +67655,10 @@ PrefabInstance:
     - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_Name
       value: PF_Fence_Low_Straight (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3726566615185591919, guid: af2ac9042d496e04083186711e805471, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 4106363922838705365, guid: af2ac9042d496e04083186711e805471, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67983,6 +68295,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68819,6 +69135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5501716
@@ -69573,6 +69893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.5501716
@@ -69895,6 +70219,10 @@ PrefabInstance:
     - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
       propertyPath: m_Name
       value: PF_Rocks (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -71072,6 +71400,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73057,6 +73389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Block_Moving_Large
       objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalPosition.x
       value: 26.691008
@@ -73680,6 +74016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Rocks (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -74140,6 +74480,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.85017157
@@ -74478,6 +74822,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -76256,6 +76604,10 @@ PrefabInstance:
     - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_Name
       value: PF_Stones (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -80778,6 +81130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Rocks (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81664,6 +82020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -33.66661
@@ -81779,6 +82139,10 @@ PrefabInstance:
     - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
       propertyPath: m_Name
       value: PF_Rocks (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2069433108248543922, guid: 05631d17c610e2c418983784d55012e8, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -81968,6 +82332,10 @@ PrefabInstance:
     - target: {fileID: 7494929282327640483, guid: 03ee68850b1c0524a9d89271eeca47ca, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7494929282327640483, guid: 03ee68850b1c0524a9d89271eeca47ca, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -82607,6 +82975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_Stones (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6089384041439648730, guid: ba966af074e815648b0374098f0df4fd, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 6902336153274351968, guid: ba966af074e815648b0374098f0df4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 42.75809
@@ -83092,6 +83464,10 @@ PrefabInstance:
     - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_Name
       value: PF_Block_Moving_Large (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267517079648782400, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 1935686638252626682, guid: 2c9edd471baa0954bb20386b885d4367, type: 3}
       propertyPath: m_LocalScale.x
