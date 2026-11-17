@@ -21,5 +21,6 @@ public class CameraEvent : MonoBehaviour
             PlayerCam.transform.Rotate(Vector3.right * 60);
             gameObject.SetActive(false); //El propio switch se apaga y desaparece de escena
         }
+
     }
 }
